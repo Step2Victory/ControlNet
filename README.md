@@ -1,5 +1,7 @@
 # ControlNet
 
+Разворачивает приложение `gradio_canny2image.py` из репозитория [lllyasviel/ControlNet](https://github.com/lllyasviel/ControlNet) в Docker.
+
 ## Инструкция по установке
 
 1) Сделать git clone репозитория: 
