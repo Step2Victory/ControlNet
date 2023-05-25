@@ -1,4 +1,4 @@
-# ControlNet-Docker
+# ControlNet
 
 ## Инструкция по установке
 
@@ -8,7 +8,7 @@ git clone https://github.com/Step2Victory/ControlNet.git
 ```
 2) Зайти в папку проекта:
 ```bash
-cd ControlNet-Docker/
+cd ControlNet/
 ```
 4) [Скачать веса модели](https://huggingface.co/lllyasviel/ControlNet/blob/main/models/control_sd15_canny.pth)  и поместить в папку `src/models/`.
 5) Собрать докер:
