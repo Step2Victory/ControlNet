@@ -22,3 +22,8 @@ docker build -t controlnet .
 docker run --gpus=all -it -p 7860:7860 controlnet
 ```
 6) Перейти на [localhost:7860](http://localhost:7860/).
+
+## Тестирование
+1) Скачать картинку `thomas_shelby.png` из папки `test`.
+2) Добавить её в gradio приложение и установить `seed` = 42.
+3) Сравнить полученную картинку с картинкой `astronaut_42.png`. 
