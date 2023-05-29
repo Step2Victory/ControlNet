@@ -2,6 +2,10 @@
 
 Разворачивает приложение `gradio_canny2image.py` из репозитория [lllyasviel/ControlNet](https://github.com/lllyasviel/ControlNet) в Docker.
 
+## Требование
+1) Видеокарта с поддержкой NVidia Cuda.
+2) Объем видеопамяти 8гб+.
+
 ## Инструкция по установке
 
 1) Сделать git clone репозитория: 
