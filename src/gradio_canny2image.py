@@ -24,6 +24,21 @@ ddim_sampler = DDIMSampler(model)
 
 
 def process(input_image, prompt, a_prompt, n_prompt, num_samples, image_resolution, ddim_steps, guess_mode, strength, scale, seed, eta, low_threshold, high_threshold):
+    print("input_image", type(input_image))
+    print("prompt", type(prompt), prompt)
+    print("a_prompt", type(a_prompt), a_prompt)
+    print("n_prompt", type(n_prompt), n_prompt)
+    print("num_samples", type(num_samples), num_samples)
+    print("image_resolution", type(image_resolution), image_resolution)
+    print("ddim_steps", type(ddim_steps), ddim_steps)
+    print("guess_mode", type(guess_mode), guess_mode)
+    print("strength", type(strength), strength)
+    print("scale", type(scale), scale)
+    print("seed", type(seed), seed)
+    print("eta", type(eta), eta)
+    print("low_threshold", type(low_threshold), low_threshold)
+    print("high_threshold", type(high_threshold), high_threshold)
+    
     with torch.no_grad():
         img = resize_image(HWC3(input_image), image_resolution)
         H, W, C = img.shape
@@ -91,6 +106,7 @@ with block:
         with gr.Column():
             result_gallery = gr.Gallery(label='Output', show_label=False, elem_id="gallery").style(grid=2, height='auto')
     ips = [input_image, prompt, a_prompt, n_prompt, num_samples, image_resolution, ddim_steps, guess_mode, strength, scale, seed, eta, low_threshold, high_threshold]
+    
     run_button.click(fn=process, inputs=ips, outputs=[result_gallery])
 
 
