@@ -1,6 +1,6 @@
 # ControlNet
 
-Разворачивает приложение `gradio_canny2image.py` из репозитория [lllyasviel/ControlNet](https://github.com/lllyasviel/ControlNet) в Docker.
+Проверяет репродуцируемость проекта из репозитория [lllyasviel/ControlNet](https://github.com/lllyasviel/ControlNet) в Docker.
 
 ## Технические требования
 1) Видеокарта с поддержкой NVidia Cuda.
