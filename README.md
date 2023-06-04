@@ -22,5 +22,5 @@ docker build -t controlnet .
 ```
 4) Запустить докер: 
 ```bash 
-docker run -it --gpus=all controlnet
+docker run -it -v ${pwd}/test:/ControlNet-main/test --gpus=all controlnet
 ```
